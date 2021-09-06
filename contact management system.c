@@ -1,364 +1,159 @@
-//LEARNPROGRAMO - PROGRAMMING MADE SIMPLE
 #include<stdio.h>
-
-#include<conio.h>
-
-#include<string.h>
-
-#include<process.h>
-
-#include<stdlib.h>
-
-#include<dos.h>
-
-struct contact
-
-{
-
-    long ph;
-
-    char name[20],add[20],email[30];
-
-} list;
-
-char query[20],name[20];
-
-FILE *fp, *ft;
-
-int i,n,ch,l,found;
-
-int main()
-
-{
-
-main:
-
-    system("cls");    /* ************Main menu ***********************  */
-
-    printf("\n\t **** Welcome to Contact Management System ****");
-
-    printf("\n\n\n\t\t\tMAIN MENU\n\t\t=====================\n\t\t[1] Add a new Contact\n\t\t[2] List all Contacts\n\t\t[3] Search for contact\n\t\t[4] Edit a Contact\n\t\t[5] Delete a Contact\n\t\t[0] Exit\n\t\t=================\n\t\t");
-
-    printf("Enter the choice:");
-
-    scanf("%d",&ch);
-
-    switch(ch)
-
-    {
-
-    case 0:
-
-        printf("\n\n\t\tAre you sure you want to exit?");
-
-        break;
-
-        /* *********************Add new contacts************  */
-
-    case 1:
-
-        system("cls");
-
-        fp=fopen("contact.dll","a");
-
-        for (;;)
-
-        {
-            fflush(stdin);
-
-            printf("To exit enter blank space in the name input\nName (Use identical):");
-
-            scanf("%[^\n]",&list.name);
-
-            if(stricmp(list.name,"")==0 || stricmp(list.name," ")==0)
-
-                break;
-
-            fflush(stdin);
-
-            printf("Phone:");
-
-            scanf("%ld",&list.ph);
-
-            fflush(stdin);
-
-            printf("address:");
-
-            scanf("%[^\n]",&list.add);
-
-            fflush(stdin);
-
-            printf("email address:");
-
-            gets(list.email);
-
-            printf("\n");
-
-            fwrite(&list,sizeof(list),1,fp);
-
-        }
-
-        fclose(fp);
-
-        break;
-
-        /* *********************list of contacts*************************  */
-
-    case 2:
-
-        system("cls");
-
-        printf("\n\t\t================================\n\t\t\tLIST OF CONTACTS\n\t\t================================\n\nName\t\tPhone No\t    Address\t\tE-mail ad.\n=================================================================\n\n");
-
-        for(i=97; i<=122; i=i+1)
-
-        {
-
-            fp=fopen("contact.dll","r");
-
-            fflush(stdin);
-
-            found=0;
-
-            while(fread(&list,sizeof(list),1,fp)==1)
-
-            {
-
-                if(list.name[0]==i || list.name[0]==i-32)
-
-                {
-
-                    printf("\nName\t: %s\nPhone\t: %ld\nAddress\t: %s\nEmail\t: %s\n",list.name,
-
-                           list.ph,list.add,list.email);
-
-                    found++;
-
-                }
-
+#include<string.h> 
+int main() { 
+  char quest [11][200];
+  char optionl [3][20],option2 [3][20], 
+  option3 [3][20],option4 [3][20], 
+  option5 [3][20],option6 [3][20],
+  option7 [3][20],option8 [3][20],
+  option9 [3][20],option10 [3][20],
+  option11 [3][20];
+  int response[10], correct_ans[11], option,i, marks;    
+  strcpy(quest[0], "Who invented C Language?");  
+  strcpy (optionl [0],"1. Charles Babbage");  
+  strcpy(optionl[1] ,"2. Dennis Ritchie");  
+  strcpy(optionl[2] ,"3. Steve Jobs");  
+  correct_ans[0] = 1;  
+  strcpy(quest[1], "C Language is a successor to which language.?");  
+  strcpy(option2 [0],"1. D Language");  
+  strcpy(option2[1], "2. BASIC");  
+  strcpy(option2[2],"3. B Language");  
+  correct_ans[1]=2;  
+  strcpy(quest[2], " C is a which level language.?");  
+  strcpy(option3 [0],"1.Low Level");  
+  strcpy(option3[1] ,"2.High Level");  
+  strcpy(option3 [2],"3.Low + High");  
+  correct_ans[2]=1;  
+  strcpy(quest[3], "C Language was developed in the year ____");  
+  strcpy(option4 [0],"l.1970.");  
+  strcpy(option4[1] ,"2.1975");  
+  strcpy(option4[2] ,"3.1980");  
+  correct_ans[3] = 0;  
+  strcpy(quest[4], "Which one is not a reserve keyword in C Language?");  
+  strcpy(option5[0],"l.auto");  
+  strcpy(option5[1],"2.main");  
+  strcpy(option5[2],"3.case");  
+  correct_ans[4] = 1; 
+  strcpy(quest[5], "C is _______ type of programming language.?");  
+  strcpy(option6[0],"l. Object Oriented");  
+  strcpy(option6[1],"2. Procedural");  
+  strcpy(option6[2],"3. Functional");  
+  correct_ans[5] = 1;
+  strcpy(quest[6], "C language was invented in which laboratories.?");  
+  strcpy(option7[0],"l. Uniliver Labs");  
+  strcpy(option7[1],"2. IBM Labs");  
+  strcpy(option7[2],"3. AT&T Bell Labs");  
+  correct_ans[6] = 2;
+  strcpy(quest[7], "BCPL Language is also called..?");  
+  strcpy(option8[0],"l. B Language");  
+  strcpy(option8[1],"2. C Language");  
+  strcpy(option8[2],"3. None");  
+  correct_ans[7] = 2;
+  strcpy(quest[8], "C language was invented to develop which Operating System.?");  
+  strcpy(option9[0],"l. Linux");  
+  strcpy(option9[1],"2. Ubuntu");  
+  strcpy(option9[2],"3. Unix");  
+  correct_ans[8] = 2;
+  strcpy(quest[9], "C language is used in the development of .?");  
+  strcpy(option10[0],"l. Databases");  
+  strcpy(option10[1],"2. Graphic Applications");  
+  strcpy(option10[2],"3. All of the above");  
+  correct_ans[9] = 2;
+  strcpy(quest[10], "Prototype of a function means _____");  
+  strcpy(option11[0],"l. Input of function");  
+  strcpy(option11[1],"2. Output of function");  
+  strcpy(option11[2],"3. Declaration of function");  
+  correct_ans[10] = 2;
+  do {  
+    printf("\n\n\n\n QUIZ PROGRAM"); 
+    printf("\n*******************"); 
+    printf("\n 1. Display Questions");   
+    printf("\n 2. Display Result");  
+    printf("\n 3. EXIT");  
+    printf ("\n *************************");  
+    printf("\n\n\n Enter your option: ");  
+    scanf("%d", &option);  
+    switch(option)  {  
+       case 1:    
+           printf ("\n %s \n", quest [0]);   
+           for(i=0;i<3;i++)   {   
+              printf("\n %s", optionl[i]);   
+           }   
+           printf ("\n\n Enter your answer number: ");   
+           scanf("%d", &response[0]);   
+           printf ("\n %s \n", quest [1]);   
+           for (i=0;i<3;i++)   {   
+             printf("\n %s", option2[i]);   
+           }   
+           printf("\n\n Enter your answer number: ");   
+           scanf("%d", &response[1]);   
+           printf("\n %s \n", quest[2]);  
+           for(i=0;i<3;i++)  {   
+             printf("\n %s", option3[i]);  
+           }   
+           printf("\n\n Enter your answer number: ");   
+           scanf ("%d", &response [2]);   
+           printf("\n %s \n", quest[3]);  
+           for (i=0;i<3;i++)  {   
+              printf("\n %s", option4[i]);  
+           }   
+           printf("\n\n Enter your answer number: ");   
+           scanf ("%d", &response [3]);   
+           printf("\n %s \n", quest[4]);  
+           for (i=0;i<3;i++)  {   
+               printf("\n %s", option5[i]);  
+           }   
+           printf("\n\n Enter your answer number: ");   
+           scanf ("%d", &response [4] );
+		    printf("\n %s \n", quest[5]);  
+           for (i=0;i<3;i++)  {   
+               printf("\n %s", option6[i]);
+		    }
+		    printf("\n\n Enter your answer number: ");   
+            scanf ("%d", &response [5]);   
+            printf("\n %s \n", quest[6]);  
+            for (i=0;i<3;i++)  {   
+               printf("\n %s", option7[i]);  
             }
-
-            if(found!=0)
-
-            {
-                printf("=========================================================== [%c]-(%d)\n\n",i-32,found);
-
-                getch();
-            }
-
-            fclose(fp);
-
-        }
-
-        break;
-
-        /* *******************search contacts**********************  */
-
-    case 3:
-
-        system("cls");
-
-        do
-
-        {
-
-            found=0;
-
-            printf("\n\n\t..::CONTACT SEARCH\n\t===========================\n\t..::Name of contact to search: ");
-
-            fflush(stdin);
-
-            scanf("%[^\n]",&query);
-
-            l=strlen(query);
-
-            fp=fopen("contact.dll","r");
-
-            system("cls");
-
-            printf("\n\n..::Search result for '%s' \n===================================================\n",query);
-
-            while(fread(&list,sizeof(list),1,fp)==1)
-
-            {
-
-                for(i=0; i<=l; i++)
-
-                    name[i]=list.name[i];
-
-                name[l]='\0';
-
-                if(stricmp(name,query)==0)
-
-                {
-
-                    printf("\n..::Name\t: %s\n..::Phone\t: %ld\n..::Address\t: %s\n..::Email\t: %s\n",list.name,list.ph,list.add,list.email);
-
-                    found++;
-
-                    if (found%4==0)
-
-                    {
-
-                        printf("..::Press any key to continue...");
-
-                        getch();
-
-                    }
-
-                }
-
-            }
-
-            if(found==0)
-
-                printf("\n..::No match found!");
-
-            else
-
-                printf("\n..::%d match(s) found!",found);
-
-            fclose(fp);
-
-            printf("\n ..::Try again?\n\n\t[1] Yes\t\t[0] No\n\t");
-
-            scanf("%d",&ch);
-
-        }
-        while(ch==1);
-
-        break;
-
-        /* *********************edit contacts************************/
-
-    case 4:
-
-        system("cls");
-
-        fp=fopen("contact.dll","r");
-
-        ft=fopen("temp.dat","w");
-
-        fflush(stdin);
-
-        printf("..::Edit contact\n===============================\n\n\t..::Enter the name of contact to edit:");
-
-        scanf("%[^\n]",name);
-
-        while(fread(&list,sizeof(list),1,fp)==1)
-
-        {
-
-            if(stricmp(name,list.name)!=0)
-
-                fwrite(&list,sizeof(list),1,ft);
-
-        }
-
-        fflush(stdin);
-
-        printf("\n\n..::Editing '%s'\n\n",name);
-
-        printf("..::Name(Use identical):");
-
-        scanf("%[^\n]",&list.name);
-
-        fflush(stdin);
-
-        printf("..::Phone:");
-
-        scanf("%ld",&list.ph);
-
-        fflush(stdin);
-
-        printf("..::address:");
-
-        scanf("%[^\n]",&list.add);
-
-        fflush(stdin);
-
-        printf("..::email address:");
-
-        gets(list.email);
-
-        printf("\n");
-
-        fwrite(&list,sizeof(list),1,ft);
-
-        fclose(fp);
-
-        fclose(ft);
-
-        remove("contact.dll");
-
-        rename("temp.dat","contact.dll");
-
-        break;
-
-        /* ********************delete contacts**********************/
-
-    case 5:
-
-        system("cls");
-
-        fflush(stdin);
-
-        printf("\n\n\t..::DELETE A CONTACT\n\t==========================\n\t..::Enter the name of contact to delete:");
-
-        scanf("%[^\n]",&name);
-
-        fp=fopen("contact.dll","r");
-
-        ft=fopen("temp.dat","w");
-
-        while(fread(&list,sizeof(list),1,fp)!=0)
-
-            if (stricmp(name,list.name)!=0)
-
-                fwrite(&list,sizeof(list),1,ft);
-
-        fclose(fp);
-
-        fclose(ft);
-
-        remove("contact.dll");
-
-        rename("temp.dat","contact.dll");
-
-        break;
-
-    default:
-
-        printf("Invalid choice");
-
-        break;
-
-    }
-
-    printf("\n\n\n..::Enter the Choice:\n\n\t[1] Main Menu\t\t[0] Exit\n");
-
-    scanf("%d",&ch);
-
-    switch (ch)
-
-    {
-
-    case 1:
-
-        goto main;
-
-    case 0:
-
-        break;
-
-    default:
-
-        printf("Invalid choice");
-
-        break;
-
-    }
-
-    return 0;
-
+			printf("\n\n Enter your answer number: ");   
+           scanf ("%d", &response [6]);   
+           printf("\n %s \n", quest[7]);  
+           for (i=0;i<3;i++)  {   
+               printf("\n %s", option8[i]);  
+           }  
+           printf("\n\n Enter your answer number: ");   
+           scanf ("%d", &response [7]);   
+           printf("\n %s \n", quest[8]);  
+           for (i=0;i<3;i++)  {   
+               printf("\n %s", option9[i]);  
+           } 
+		   printf("\n\n Enter your answer number: ");   
+           scanf ("%d", &response [8]);   
+           printf("\n %s \n", quest[9]);  
+           for (i=0;i<3;i++)  {   
+               printf("\n %s", option10[i]);  
+           }
+		   printf("\n\n Enter your answer number: ");   
+           scanf ("%d", &response [9]);   
+           printf("\n %s \n", quest[10]);  
+           for (i=0;i<3;i++)  {   
+               printf("\n %s", option11[i]);  
+           }   
+            printf("\n\n Enter your answer number: ");   
+           scanf ("%d", &response [10]); 
+           break;
+         
+       case 2:   
+           marks = 0;  
+           for(i = 0;i <= 10;i++)  {   
+             if(correct_ans[i]+1==response[i])   {   
+                marks++;   
+             }  
+           }   
+           printf ("\n Out of 10 you score %d",marks);   
+           break;  
+    }  
+  }  
+      while(option!=4);
+      return 0;
 }
