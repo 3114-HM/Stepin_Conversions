@@ -4,7 +4,7 @@
 ## SEQUENCE DIAGRAM
 ![Sequence diagram for quiz](https://user-images.githubusercontent.com/55955612/132201939-9c5ce47c-355a-4756-ae57-7156546b7cb8.png)
 
-##  COMPONENT DIAGRAM
+## COMPONENT DIAGRAM
 ![Component](https://user-images.githubusercontent.com/55955612/132201941-ae3e7ca7-dcd2-49b3-95af-9eab05c553fe.png)
 
 ## CLASS DIAGRAM
