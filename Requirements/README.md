@@ -13,6 +13,6 @@ It is a program for a basic quiz on the C Programming Language. It can be update
 ## when
 ## Where
 ## How
-# Detail Requirement
+# Detail requirement
 ## High Level Requirements
 ## Low Level requirements
