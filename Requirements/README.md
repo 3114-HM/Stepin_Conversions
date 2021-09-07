@@ -29,16 +29,14 @@
 -  The constraints of the project are to develop using industry standards with a multi-file approach.
 -  The Timeline of the project is 10 days.
 ## Detail requirement
-##  High level Requirement
+## High level Requirement
  |ID| Description |Category|status|
 |--|------------|------|---------|
 |H001 |A user should be able to Access Questions  | Technical |Implemented
 |H002 |A user should be able to answer the questions|Technical|Implemented
 |H003|A user should be able to view their score |Technical|Implemented
 |H004|A user should be able to move back from it |Technical|Implemented
-
-
-##  Low level Requirements:
+## Low level Requirements
 |ID| Description |HLR ID | status|
 |--|------------|------|---------|
 |L001 |When user chooses the Display the question it should start displaying them |H001|Implemented
