@@ -1,45 +1,91 @@
-# Requirements
-## Introduction
--  A quiz refers to a short test of knowledge, typically around 10 questions in length, with question formats often including multiple choice, fill in the blanks, true or false and short answer. A quiz is much shorter than a traditional test or exam and is rarely impactful on a final course grade. Professors who employ quizzes in their courses—a practice which is increasingly viable thanks to the broader use of technology in higher ed—may schedule them in each class to ensure students have retained knowledge from the previous lesson. Others may hold pop quizzes, which are surprise tests geared towards making sure students have read course materials and are understanding broader course learnings.
--  It is a program for a basic quiz on the C Programming Language. It can be updated to turn into a quiz on any subject. It uses a function, switch case, and loop.
-## Cost and Features
-1.  Quiz Contest
-2.  It is a simple game with knowledge.
-3.  Some questions will be asked on C programming.
-## Defining our System
-![Defining our system](https://user-images.githubusercontent.com/55955612/132289831-31c4be08-2e85-4961-87b9-3e3324e75e2f.png)
--  Entering the Quiz
--  Displaying the Questions
--  Answering the Questions
--  Displaying the Score
--  Exit
-## Swot analysis
-![Screenshot (20)](https://user-images.githubusercontent.com/55955612/132289367-5f01740c-1a00-4607-aca4-39c1d8f0f2ae.png)
-## 4W's and 1H
-## Who
--  This will be useful for Everyone. We can change it from C quiz to general also.
-## What
--  We can learn new things or we can test our knowledge on that either it is basic or complex.
-## when
--  It will be useful when ever you want to test yourself or learn more.
-## Where
--  In all languages and platforms we can use quiz
-## How
--  The project is implemeted in C language.
--  The constraints of the project are to develop using industry standards with a multi-file approach.
--  The Timeline of the project is 10 days.
-## Detail requirement
-## High level Requirement
- |ID| Description |Category|status|
-|--|------------|------|---------|
-|H001 |A user should be able to Access Questions  | Technical |Implemented
-|H002 |A user should be able to answer the questions|Technical|Implemented
-|H003|A user should be able to view their score |Technical|Implemented
-|H004|A user should be able to move back from it |Technical|Implemented
-## Low level Requirements
-|ID| Description |HLR ID | status|
-|--|------------|------|---------|
-|L001 |When user chooses the Display the question it should start displaying them |H001|Implemented
-|L002 |When user starts answering immediately after answering it will move to next question|H002|Implemented
-|L003 |When user wants to view their score after choosing display score it will display the score |H003 |Implemented
-|L004 |When user wants to move back from it when we choose exit it will go back|H004 |Implemented
+## Introduction: 
+
+  In digital electronics, the number system is used for representing the information. The number system has different bases and the most common of them are the decimal, binary, octal, and hexadecimal. Any digital system can understand only the optional number system. In these systems, digits symbols are used to represent different values. The system introduced in the project makes it easier to convert a data from one representation method/ number system to other. A person can convert data to a desired format with the help of this project in timely manner. Since, the digital logic circuitry requires numorous calculations of such type, it will be benificial to have such a system. 
+
+
+## Features:
+
+This system supports following types of data conversions (For positive integers): 
+
+
+![image](https://user-images.githubusercontent.com/80566521/114318753-16e67380-9b2c-11eb-8b23-4bc4af3ca7fa.png)
+
+## Defining Our System
+
+![image](https://github.com/Madhuraaaaa/StepIn-Mini-project/blob/main/1_Requirements/SYSTEM_DEFINITION.png)
+
+## Research:
+
+
+![image](https://user-images.githubusercontent.com/80566521/114319584-bbb68000-9b2f-11eb-9044-67c8093a5842.png)
+
+**Examples:**
+
+| Decimal |	Binary | Octal	| Hexadecimal|
+|:---:|:---:|:---:|:---:|
+|0	|0000|	0|	0|
+|1	|0001|	1|	1|
+|2	|0010|	2|	2|
+|3	|0011|	3| 3|
+|4	|0100|	4| 4|
+|5	|0101|	5| 5|
+|6	|0110|	6| 6|
+|7	|0111|	7|	7|
+|8	|1000|	10|	8|
+|9	|1001|	11|	9|
+|10	|1010|	12|	A|
+|11	|1011|	13|	B|
+|12	|1100|	14|	C|
+|13	|1101|	15|	D|
+|14	|1110|	16|	E|
+|15	|1111|	17|	F|
+
+![image](https://github.com/Madhuraaaaa/StepIn-Mini-project/blob/main/1_Requirements/Table-Listing-Binary-Gray-BCD-Express-3-Coding-Decimal-Digits.jpg)
+## SWOT Analysis: 
+
+
+
+
+
+
+
+![image](https://github.com/Madhuraaaaa/StepIn-Mini-project/blob/main/1_Requirements/SWOT%20Analysis.png)
+
+
+# 4W&#39;s and 1&#39;H
+
+## Who:
+
+1. Electronics engineering students
+2. Digital circuit developer
+
+## What:
+A person can convert data to a desired format with the help of this project in timely manner.
+
+
+## When:
+
+1. At the initial stage of digital circuit designing operation.
+
+## Where:
+
+This project can be used by students as well as circuit developers where such calculations are needed.
+
+## How:
+
+This project can perform various calculations at the same and make user's task smooth and effortless.
+
+# Detail requirements
+## High Level Requirements:
+
+| ID | Description | Status (Implemented/Future)|
+|:---:|:---:|:---:|
+|HLR-1| User shall be able to convert data from decimal system to another |Implemented|
+|HLR-2| System output must display data without any error |Implemented|
+|HLR-3| User shall be able to convert data between any number systems|Future|
+|HLR-4| User shall be able to convert a negative data value|Future|
+
+##  Low level Requirements:
+| ID | Description | Status (Implemented/Future)|
+|:---:|:---:|:---:|
+|LLR-1|User shall be able to read the output data|Implemented| 
