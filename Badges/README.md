@@ -10,4 +10,6 @@
 
 
 
-(https://frontend.code-inspector.com/public/user/github/3114-HM)
+<a href="https://frontend.code-inspector.com/public/user/github/3114-HM">
+   <img src="https://code-inspector.com/public/badge/user/github/3114-HM?style=light" alt="code inspector badge" />
+</a>
