@@ -1,33 +1,33 @@
 # Requirements
 ## Introduction
-- A quiz refers to a short test of knowledge, typically around 10 questions in length, with question formats often including multiple choice, fill in the blanks, true or false and short answer. A quiz is much shorter than a traditional test or exam and is rarely impactful on a final course grade. Professors who employ quizzes in their courses—a practice which is increasingly viable thanks to the broader use of technology in higher ed—may schedule them in each class to ensure students have retained knowledge from the previous lesson. Others may hold pop quizzes, which are surprise tests geared towards making sure students have read course materials and are understanding broader course learnings.
-- It is a program for a basic quiz on the C Programming Language. It can be updated to turn into a quiz on any subject. It uses a function, switch case, and loop.
+-  A quiz refers to a short test of knowledge, typically around 10 questions in length, with question formats often including multiple choice, fill in the blanks, true or false and short answer. A quiz is much shorter than a traditional test or exam and is rarely impactful on a final course grade. Professors who employ quizzes in their courses—a practice which is increasingly viable thanks to the broader use of technology in higher ed—may schedule them in each class to ensure students have retained knowledge from the previous lesson. Others may hold pop quizzes, which are surprise tests geared towards making sure students have read course materials and are understanding broader course learnings.
+-  It is a program for a basic quiz on the C Programming Language. It can be updated to turn into a quiz on any subject. It uses a function, switch case, and loop.
 ## Cost and Features
 1.  Quiz Contest
 2.  It is a simple game with knowledge.
 3.  Some questions will be asked on C programming.
 ## Defining our System
 ![Defining our system](https://user-images.githubusercontent.com/55955612/132289831-31c4be08-2e85-4961-87b9-3e3324e75e2f.png)
-- Entering the Quiz
-- Displaying the Questions
-- Answering the Questions
-- Displaying the Score
-- Exit
+-  Entering the Quiz
+-  Displaying the Questions
+-  Answering the Questions
+-  Displaying the Score
+-  Exit
 ## Swot analysis
 ![Screenshot (20)](https://user-images.githubusercontent.com/55955612/132289367-5f01740c-1a00-4607-aca4-39c1d8f0f2ae.png)
 ## 4W's and 1H
 ## Who
-- This will be useful for Everyone. We can change it from C quiz to general also.
+-  This will be useful for Everyone. We can change it from C quiz to general also.
 ## What
-- We can learn new things or we can test our knowledge on that either it is basic or complex.
+-  We can learn new things or we can test our knowledge on that either it is basic or complex.
 ## when
-- It will be useful when ever you want to test yourself or learn more.
+-  It will be useful when ever you want to test yourself or learn more.
 ## Where
-- In all languages and platforms we can use quiz
+-  In all languages and platforms we can use quiz
 ## How
-- The project is implemeted in C language.
-- The constraints of the project are to develop using industry standards with a multi-file approach.
-- The Timeline of the project is 10 days.
+-  The project is implemeted in C language.
+-  The constraints of the project are to develop using industry standards with a multi-file approach.
+-  The Timeline of the project is 10 days.
 ## Detail requirement
 ##  High level Requirement
  |ID| Description |Category|status|
@@ -36,9 +36,6 @@
 |H002 |A user should be able to answer the questions|Technical|Implemented
 |H003|A user should be able to view their score |Technical|Implemented
 |H004|A user should be able to move back from it |Technical|Implemented
-
-
-
 
 
 ##  Low level Requirements:
